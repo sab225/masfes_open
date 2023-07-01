@@ -1,0 +1,43 @@
+/*Card Style*/
+.card{
+  height: 10rem;
+  background-color: var(--right-accent);
+  border-radius: 1rem;
+  display: flex;
+  /*justify-content: space-between;*/
+  flex-direction: row;
+  margin-top : 10px ;
+}
+/*ホバー強調表示*/
+.card:hover{
+  transition: .5s;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.card_thumbnail > *{
+  height: 10rem;
+  border-radius: 1rem 0 0 1rem;
+  margin: 0;
+}
+
+.card_thumbnail{
+  margin: 0;
+}
+
+.card_inside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.card_title{
+  font-size: 2rem;
+  padding-right: 2rem;
+  border-bottom: solid .15rem var(--dark-accent);
+}
+
+a{
+  text-decoration: none;
+  color:black
+}

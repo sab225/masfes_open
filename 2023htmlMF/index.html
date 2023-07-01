@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redirecting...</title>
+<script>
+function switchByWidth(){
+    if (window.matchMedia('(max-width: 799px)').matches) {
+        open( "./mobile/phone.html","_self") ;
+    } else if (window.matchMedia('(min-width:800px)').matches) {
+        open( "./pc/pc.html","_self") ;
+    }
+}
+
+
+
+//タブレット対応版
+//function switchByWidth(){
+//    if (window.matchMedia('(max-width: 480px)').matches) {
+//        open( "./mobile/phone.html","_self") ;
+//    } else if (window.matchMedia('(max-width: 959px)').matches) {
+//        open( "./tablet/tablet.html","_self") ;
+//    } 
+//else if (window.matchMedia('(min-width:960px)').matches) {
+//        open( "./pc/pc.html","_self") ;
+//    }
+//}
+
+
+//一回やったら再度処理しないように
+window.onload = switchByWidth;
+window.onresize = switchByWidth;
+</script>
+</head>
+</html>

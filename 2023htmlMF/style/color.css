@@ -1,0 +1,8 @@
+/*
+ *色設定用ドキュメント
+*/
+:root{
+    --dark-accent: rgba(41, 47, 99, 0.98);
+    --background-body: rgba(55, 55, 55, 0.5);/*ナビメニュー表示時背景*/
+    --right-accent : #ddd;/*文字色変化*/
+}
