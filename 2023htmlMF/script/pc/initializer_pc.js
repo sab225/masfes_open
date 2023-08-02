@@ -37,6 +37,6 @@ window.addEventListener("load", function(){
     })
     var script = document.createElement("style")
         script.rel = "stylesheet";
-        script.src = String(path).replace("script/pc/initializer_pc.js","style/color.css");
+        script.src = String(path).replace("initializer_pc.js","../../style/color.css");
         
   });

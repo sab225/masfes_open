@@ -15,19 +15,19 @@ function switchByWidth(){
 }
 
 
-
+/*
 //タブレット対応版
-//function switchByWidth(){
-//    if (window.matchMedia('(max-width: 480px)').matches) {
-//        open( "./mobile/phone.html","_self") ;
-//    } else if (window.matchMedia('(max-width: 959px)').matches) {
-//        open( "./tablet/tablet.html","_self") ;
-//    } 
-//else if (window.matchMedia('(min-width:960px)').matches) {
-//        open( "./pc/pc.html","_self") ;
-//    }
-//}
-
+function switchByWidth(){
+    if (window.matchMedia('(max-width: 480px)').matches) {
+        open( "./mobile/phone.html","_self") ;
+    } else if (window.matchMedia('(max-width: 959px)').matches) {
+        open( "./tablet/tablet.html","_self") ;
+    } 
+else if (window.matchMedia('(min-width:960px)').matches) {
+        open( "./pc/pc.html","_self") ;
+    }
+}
+*/
 
 //一回やったら再度処理しないように
 window.onload = switchByWidth;
