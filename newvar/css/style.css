@@ -1,0 +1,129 @@
+/*フォント読み込み*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/*サイドバー*/
+html {
+    background-color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: #26242a;
+    font-size: 0.9em;
+}
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+.nav ul {
+    list-style: none;
+}
+.nav ul li {
+    position: relative;
+    margin: 3.2em 0;
+}
+.nav ul li a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: rgba(255, 255, 255, 0.35);
+    display: block;
+    transition: all ease-out 300ms;
+}
+.nav ul li.active a {
+    color: white;
+}
+.nav ul li:not(.active)::after {
+    opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+    color: rgba(255, 255, 255, 0.75);
+}
+.nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: black;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #3a3151, #304d53);
+}
+.main_text {
+    position: relative;
+    width: 75%;
+    float: right;
+    height: 100vh;
+    color: white;
+}
+
+.main_text .gazo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.main_text a {
+    position: relative;
+}
+.main_text p {
+    text-transform: uppercase;
+    font-size: 0.9em;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    margin-top: 20px;
+}
+
+/*フッター*/
+
+.hutta-sns {
+    margin: 10px auto;
+    text-align: center;
+    overflow: hidden;
+}
+i {
+    position: relative;
+    top: 30px;
+    margin: 15px;
+    transition: all 150ms cubic-bezier(0,.96,.38,1);
+}
+i:hover {
+    top: 8px;
+}
+
+       
+/*中央に揃える*/
+
+.cen{
+    text-align: center;
+    line-height: 0.9em;
+    font-size: 1.5em;
+}
+
+/*横並びにする*/
+
+.yokoarea {
+    display: flex;
+    justify-content: center;
+   }
+    
+   .yoko {
+    color: #fff;
+    line-height: auto;
+    width: 40%;
+    height: 40%;
+   }
+   .yoko p{
+    line-height: 0.8em;
+    font-size: 1em;
+   }
+

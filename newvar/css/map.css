@@ -1,0 +1,164 @@
+/*フォント読み込み*/
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+
+/*サイドバー*/
+html {
+    font-size: 20px;
+    background-color: black;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.sidebar {
+    position: fixed;
+    width: 25%;
+    height: 100vh;
+    background: #26242a;
+    font-size: 0.65em;
+}
+.nav {
+    position: relative;
+    margin: 0 15%;
+    text-align: right;
+    top: 50%;
+    transform: translateY(-50%);
+    font-weight: bold;
+}
+.nav ul {
+    list-style: none;
+}
+.nav ul li {
+    position: relative;
+    margin: 3.2em 0;
+}
+.nav ul li a {
+    line-height: 5em;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 0.4em;
+    color: rgba(255, 255, 255, 0.35);
+    display: block;
+    transition: all ease-out 300ms;
+}
+.nav ul li.active a {
+    color: white;
+}
+.nav ul li:not(.active)::after {
+    opacity: 0.2;
+}
+.nav ul li:not(.active):hover a {
+    color: rgba(255, 255, 255, 0.75);
+}
+.nav ul li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 0.2em;
+    background: black;
+    left: 0;
+    bottom: 0;
+    background-image: linear-gradient(to right, #3a3151, #304d53);
+}
+.main_text {
+    position: relative;
+    width: 75%;
+    float: right;
+    height: 100vh;
+    color: white;
+}
+
+.main_text .gazo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.main_text a {
+    position: relative;
+}
+.main_text p {
+    text-transform: uppercase;
+    font-size: 0.6em;
+    letter-spacing: 0.1em;
+    color: #FFF;
+    margin-top: 20px;
+}
+
+/*Not サラダバー*/
+/*#map-case{
+    width: 70%;
+    height: 100%;
+    overflow: hidden;
+}
+
+#map-iframe{
+    width: 100%;
+    height: 90%;
+    background-color: #fff;
+    overflow: hidden;
+}*/
+
+.background {
+    top: 0;
+    left: 0;
+    left: 25%;
+    width:  75%;
+    height: 100%;
+    position: fixed;
+    background-color: #fff;
+    background-position: center center;
+    opacity: 0;
+-webkit-background-size: 80%;
+        background-size: 80%;
+        background-repeat: no-repeat;
+-webkit-transition: all 0.5s ease 0s;
+   -moz-transition: all 0.5s ease 0s;
+        transition: all 0.5s ease 0s;
+}
+.show .background {
+    opacity: 1;
+}
+.contents{
+    background-color: #fff;
+}
+
+.contents .wrap {
+    padding: 40vh 0 60vh;
+    position:relative;
+    z-index: 2;
+	margin: 0;
+    background-color: rgba(140,140,140,0.2);
+}
+/* design*/
+#content01_bg {background-image: url(/newvar/img/map/1.png);
+
+    -webkit-background-size: 60%;
+    background-size: 60%;}
+#content02_bg {background-image: url(/newvar/img/map/2.png);}
+#content03_bg {background-image: url(/newvar/img/map/3.png);}
+#content04_bg {background-image: url(/newvar/img/map/4.png);}
+#content05_bg {background-image: url(/newvar/img/map/5.png);}
+.text-box {
+    padding: 50px 25px;
+    width: 480px;
+    background-color: rgba(0,0,0,0.5);
+    color: #fff;
+}
+.text-box .catch {
+    margin: 0 0 10px;
+    font-size: 40px;
+}
+.text-box .copy {
+    margin: 0;
+    line-height: 2;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+}
+
+
+
+
+
