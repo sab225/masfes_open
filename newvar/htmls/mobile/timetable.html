@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <link rel="stylesheet" href="/newvar/css/mobile/style.css">
+    <link rel="stylesheet" href="/newvar/css/mobile/timetable.css">
+    <link rel="stylesheet" href="/newvar/css/mobile/navbar.css">
+
+</head>
+<body>
+
+    <header>
+        <h1 class="icon">芝浦工大柏第44回増穂祭</h1>
+            <!-- 
+                ハンバーガーメニューのボタン部分
+                透明な<input>と<label>を結びつけ、CSSのみでオンオフできるように
+                hamburger_button_innerは中の三本線を設定
+            -->
+            <input type="checkbox" name="hamburger" id="hamburger_button_id">
+            <label class="hamburger_button" for="hamburger_button_id">
+                <span class="hamburger_button_inner"></span>
+            </label>
+            <nav>
+                <ul class="menu-contents">
+                    <li class="menu-contents-title"><a href="/newvar/htmls/mobile/index.html">トップページ</a></li>
+                    <li class="menu-contents-title"><a href="/newvar/htmls/mobile/project.html">企画一覧</a></li>
+                    <li class="menu-contents-title"><a href="/newvar/htmls/mobile/map.html">校内MAP</a></li>
+                    <li class="menu-contents-title">タイムテーブル</li>
+                </ul>
+            </nav>
+    </header>  
+<br><br>
+    <div class="top_title">
+        <center><h1>タイムテーブル</h1></center>
+    </div>
+    
+      
+    <div class="m_timetable">
+        <div class="t_selectDate">
+            <span id="t_selectBefore"></span>
+            <h2 id="t_date">2023年 9月 29日(金)</h2>
+            <span id="t_selectAfter"></span>
+        </div>
+        <div id="t_tableOuter" class="t_tableOuter">
+            <table id="t_timetable929" class="t_table"></table>
+            <table id="t_timetable930" class="t_table"></table>
+        </div>
+    </div>
+
+    <div class="hutta-sns">
+        <i><a href="https://twitter.com/"><img src="/newvar/img/icons/Twitter_icon.png" height="100" width="100"></a></i>
+        <i><a href="https://www.instagram.com/"><img src="/newvar/img/icons/Insta_icon.png" height="100" width="100"></a></i>
+        <i><a href="https://www.ka.shibaura-it.ac.jp/"><img src="/newvar/img/icons/Gako_icon.png" height="100" width="100"></a></i>
+        <i><a href="https://www.youtube.com/"><img src="/newvar/img/icons/youtube_instead.png" height="100" width="100"></a></i>
+    </div>
+
+</body>
+</html>
+
+<script src="/newvar/script/timetable.js"></script>

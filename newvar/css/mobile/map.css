@@ -1,0 +1,80 @@
+
+.contents-wrapper {
+    margin-top: 0;
+    width: 100%;
+    padding: 0 60px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    flex-direction: column;
+  
+  }
+  
+  .c-caution,
+  .c-pamphlet,
+  .c-caution_mini {
+    margin: 40px 0;
+    width: 100%;
+    text-align: center;
+  }
+  
+  .c-caution h1 {
+    font-size: 5em;
+    margin-bottom: 10px;
+  }
+  
+  .c-caution p {
+    font-size: 3em;
+  }
+  
+  
+  .c-caution_mini h1 {
+    font-size: 6em;
+    margin-bottom: 10px;
+  }
+  
+  .c-caution_mini p {
+    font-size: 3em;
+    text-align: left;
+  }
+  
+  
+  .c-pamphlet {
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .c-pamphlet h1 {
+    font-size: 4em;
+    margin-bottom: 12.5px;
+  }
+  
+  .c-pamphlet img {
+    width: auto;
+    height: 600px;
+    background-color: white;
+    object-fit: cover;
+    text-align: left;
+  }
+  
+  /*アンケ_トップ*/
+  
+  .anke_top{
+    color: white;
+    text-align: center;
+    font-size:  400%;
+  }
+  
+  
+  /*まっぷ*/
+  
+  .map{
+    text-align: center;
+    color: white;
+    font-size: 3em;
+  }
+  

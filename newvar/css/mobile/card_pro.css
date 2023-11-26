@@ -1,0 +1,99 @@
+
+
+
+
+
+/*Card Style*/
+.card{
+  height: 10rem;
+  background-color: var(--right-accent);
+  border-radius: 1rem;
+  display: flex;
+  /*justify-content: space-between;*/
+  flex-direction: row;
+  background-color: white;
+  color: black;
+  
+}
+/*ホバー強調表示*/
+.card:hover{
+  transition: .5s;
+  box-shadow: 2px 2px 4px gray;
+}
+
+.card_thumbnail > *{
+  height: 10rem;
+  border-radius: 1rem 0 0 1rem;
+  margin: 0;
+}
+
+.card_thumbnail{
+  margin: 0;
+}
+
+.card_inside{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+
+}
+
+.card_title{
+  font-size: 2.5rem;
+  padding-right: 2rem;
+  border-bottom: solid .15rem var(--dark-accent);
+  
+}
+
+.card_ditail{
+  font-size: 2rem;
+}
+
+
+.kakusu  {
+  margin-left: 16px;
+  color: white;
+}
+.main_check  {
+  display: none;
+}
+          
+.inside_check  {
+  margin-left:0px;
+  visibility: hidden;
+  height: 0;
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  padding: 10px;
+  background-color: #343434;
+  display: block;
+}
+.main_check:checked + .inside_check  {
+  visibility: visible;
+  height: auto;
+}
+
+
+.top_mini_title h1 {
+  margin-top: 120px;
+  position: relative;
+  display: inline-block;
+  padding: 0 55px;
+  color: white;
+  font-size: 3em;
+}
+
+.top_mini_title h1:before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  display: inline-block;
+  width: 40px;
+  height: 3px;
+  background-color: rgb(255, 255, 255);
+}
+
+.top_mini_title h1:before {
+  left:0;
+}

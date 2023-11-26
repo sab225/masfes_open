@@ -1,12 +1,104 @@
-<html>
-    <head>
-        <title>第44回増尾祭</title>
-    </head>
-    <body>
-        <h1>工事中</h1>
-        <p>スマホ版のページは未完成です</p>
-        <p>ページの完成をお待ちください。</p>
-        <p>正しく表示されない可能性がありますが、<a href="/newvar/htmls/pc/index.html">ここ</a>からパソコン版ページを閲覧することができます</p>
-        <p>また、電子版パンフレットは<a href="/newvar/datas/pamphlet.pdf">こちら</a>から見ることができます</p>
-    </body>
+<!DOCTYPE html>
+<html lang="jp">
+<head>
+    <link rel="stylesheet" href="/newvar/css/mobile/style.css">
+    <link rel="stylesheet" href="/newvar/css/mobile/style_index.css">
+    <link rel="stylesheet" href="/newvar/css/mobile/navbar.css">
+</head>
+<body>
+
+    <header>
+        <h1 class="icon">芝浦工大柏第44回増穂祭</h1>
+            <!-- 
+                ハンバーガーメニューのボタン部分
+                透明な<input>と<label>を結びつけ、CSSのみでオンオフできるように
+                hamburger_button_innerは中の三本線を設定
+            -->
+            <input type="checkbox" name="hamburger" id="hamburger_button_id">
+            <label class="hamburger_button" for="hamburger_button_id">
+                <span class="hamburger_button_inner"></span>
+            </label>
+            <nav>
+                <ul class="menu-contents">
+                    <li class="menu-contents-title">トップページ</li>
+                    <li class="menu-contents-title"><a href="/newvar/htmls/mobile/project.html">企画一覧</a></li>
+                    <li class="menu-contents-title"><a href="/newvar/htmls/mobile/map.html">校内MAP</a></li>
+                    <li class="menu-contents-title"><a href="/newvar/htmls/mobile/timetable.html">タイムテーブル</a></li>
+                </ul>
+            </nav>
+    </header>    
+
+<br>
+
+    <div class="video-top">
+        <video src="/newvar/movies/pv.mp4" muted loop playsinline autoplay poster="/newvar/img/top/Icon_wide_limitBreak.png"></video>
+        <div class="video-top-text">
+          <h2>芝浦工大柏第44回増穂祭</h2>
+          <p>~Limit Break~</p>
+        </div>
+      </div>
+
+      <div class="anke_top">投票は<a href="https://forms.gle/tS7cAMm2VPLr9zFJ6"><font color="pink">こちら</font></a>から</div>
+
+      <div class="contents-wrapper">
+        <div class="c-caution">
+            <h1>開催日程</h1>
+            <p><b>9月30日(土) - 10月1日(日)</b></p><br>
+            <p>9月30日(土) 11:00 ~ 16:00</p>
+            <p>10月1日(日) 10:00 ~ 15:00</p>
+        </div>
+    </div>
+
+
+    <div class="contents-wrapper">
+        <div class="c-caution_mini">
+            <h1>諸注意</h1>
+            <p>
+                <u><b>校内での販売は原則キャッシュレス決済となっております</b></u><br>
+                <u><b>学校で電子マネーのチャージは出来ません</b></u><br>
+                <u>ご来場前にチャージはお済ませください</u><br>
+                ※一部現金のみの販売があります<br>
+                来校時は公共交通機関をご利用ください<br>
+                校内での飲酒・喫煙はご遠慮ください<br>
+                指定の場所以外での飲食はご遠慮ください<br>
+                その他注意事項は<a href="https://www.ka.shibaura-it.ac.jp/%e7%ac%ac44%e5%9b%9e%e6%96%87%e5%8c%96%e7%a5%ad%ef%bc%88%e5%a2%97%e7%a9%82%e7%a5%ad%ef%bc%89%e3%80%80%e4%b8%80%e8%88%ac%e5%85%ac%e9%96%8b%e3%81%ab%e3%81%a4%e3%81%84%e3%81%a6%e3%81%ae%e3%81%8a%e9%a1%98/"><font color="pink">こちら</font></a>からご覧ください<br>
+              </p>
+        </div>
+    </div>
+
+
+    <div class="contents-wrapper">
+        <div class="c-pamphlet">
+            <h1>今年度文化祭ロゴ</h1>
+            <img src="/newvar/img/icons/Fes_icon.png">
+        </div>
+    </div>
+
+    <div class="contents-wrapper">
+        <div class="c-pamphlet">
+            <h1>電子版パンフレットはこちら</h1>
+            <a href="/newvar/datas/pamphlet.pdf"><img src="/newvar/img/top/pamphlet.jpg"></a>
+        </div>
+    </div>
+
+    <div class="map">
+        <h1>アクセス</h1>
+              <p>〒277-0033</p>
+              <p>千葉県柏市増尾700</p>
+              <p>電話:04-7174-3100</p>
+              <p>柏駅よりスクールバス15分</p>
+              <p>新柏駅よりスクールバス5分・徒歩 25分</p>
+              <p>※情報は<a href="https://www.ka.shibaura-it.ac.jp/access/"><font color=”black”>学校ホームページ</font></a>より</p>
+    </div>
+    <center><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.3403278530996!2d139.98253367625358!3d35.84065767253629!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x601882d1a91973dd%3A0xd59a38bcb0a1d3d4!2z6Iqd5rWm5bel5qWt5aSn5a2m5p-P5Lit5a2m6auY562J5a2m5qCh!5e0!3m2!1sja!2sjp!4v1695349966471!5m2!1sja!2sjp" width=1000 height=1000 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></center>>
+
+    <div class="hutta-sns">
+        <i><a href="https://twitter.com/"><img src="/newvar/img/icons/Twitter_icon.png" height="100" width="100"></a></i>
+        <i><a href="https://www.instagram.com/"><img src="/newvar/img/icons/Insta_icon.png" height="100" width="100"></a></i>
+        <i><a href="https://www.ka.shibaura-it.ac.jp/"><img src="/newvar/img/icons/Gako_icon.png" height="100" width="100"></a></i>
+        <i><a href="https://www.youtube.com/"><img src="/newvar/img/icons/youtube_instead.png" height="100" width="100"></a></i>
+    </div>
+    <br><br><br><br><br><br><br><br>
+
+</body>
 </html>

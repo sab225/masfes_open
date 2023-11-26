@@ -29,13 +29,12 @@ function csv_data(data) {
             const dataString = response.split("\n");
             for (let i = 0; i < dataString.length; i++) {
                 dataArray[i] = dataString[i].split(/,|[\r]/);
-                if (i != dataString.length - 1) {
-                    dataArray[i].pop();
-                }
+                // if(i != dataString.length - 1) {
+                //     dataArray[i].pop();
+                // }
             }
             // タグにする
             let insertElement = "";
-            let tagName = "";
             for (let i = 0; i < dataArray.length; i++) {
                 insertElement += "<tr>";
                 for (let j = 0; j < dataArray[i].length; j++) {
@@ -65,9 +64,9 @@ function csv_data(data) {
 
                     // 予定が書かれているタグと場所の欄は色付け
                     if (j > 0 && resultString != "") {
-                        const hue = (j - 1) * 110;
-                        const saturation = Math.min(i, 1) * 50 + 100;
-                        const luminousity = Math.min(i, 1) * 30 + 25;
+                        const hue = (j - 1) * 40;
+                        const saturation = Math.min(i, 1) * -60 + 100;
+                        const luminousity = Math.min(i, 1) * 25 + 30;
                         classes += " style=\"background-color:hsl(" + hue + ", " + saturation + "%, " + luminousity + "%);\"";
                         if (i > 0) {
                             classes += " class=\"t_contents\"";

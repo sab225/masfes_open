@@ -1,0 +1,134 @@
+
+/*トップ動画*/
+
+.video-top {
+  overflow: hidden;
+  position: relative;
+  width: 101%;
+  margin-left: calc(-50vw + 50%);
+  margin-bottom: 0;
+  margin-top: 100px;
+}
+ 
+.video-top::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+ 
+.video-top video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+ 
+.video-top-text {
+  margin: 0;
+  position: absolute;
+  top: 43%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+ 
+#content .video-top-text h2 {
+  font-size: 1000px;
+  letter-spacing: 0.1rem;
+  text-shadow: 2px 2px 2px #444;
+  color: #fff;
+}
+ 
+.video-top h2{
+  font-size: 5.5rem;
+}
+
+.video-top-text p {
+  font-size: 5rem;
+  padding: 0 2rem;
+  color: #b7b7b7;
+}
+
+ 
+/*パンフとかのやつ*/
+
+.contents-wrapper {
+  margin-top: 0;
+  width: 100%;
+  padding: 0 60px;
+  box-sizing: border-box;
+  background-color: black;
+  color: white;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+}
+
+.c-caution,
+.c-pamphlet,
+.c-caution_mini {
+  margin: 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+.c-caution h1 {
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+
+.c-caution p {
+  font-size: 3em;
+}
+
+
+.c-caution_mini h1 {
+  font-size: 5em;
+  margin-bottom: 10px;
+}
+
+.c-caution_mini p {
+  font-size: 2.5em;
+}
+
+
+.c-pamphlet {
+  text-align: center;
+  margin-top: 10px;
+}
+
+.c-pamphlet h1 {
+  font-size: 4em;
+  margin-bottom: 12.5px;
+}
+
+.c-pamphlet img {
+  width: auto;
+  height: 200px;
+  object-fit: cover;
+}
+
+/*アンケ_トップ*/
+
+.anke_top{
+  color: white;
+  text-align: center;
+  font-size:  400%;
+}
+
+
+/*まっぷ*/
+
+.map{
+  text-align: center;
+  color: white;
+  font-size: 3em;
+}
